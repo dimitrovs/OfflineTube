@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "https://youtube138.p.rapidapi.com";
+const BASE_URL = "http://localhost:3001";
+
+export const BASE_VIDEO_URL = "http://localhost:3001";
 
 const options = {
   params: { hl: "en", gl: "US" },

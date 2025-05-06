@@ -1,0 +1,131 @@
+{
+    "apiInfo": {
+        "baseUrl": "https://youtube138.p.rapidapi.com",
+        "headers": {
+            "X-RapidAPI-Key": "process.env.REACT_APP_YOUTUBE_API_KEY",
+            "X-RapidAPI-Host": "youtube138.p.rapidapi.com"
+        },
+        "params": {
+            "hl": "en",
+            "gl": "US"
+        }
+    },
+    "endpoints": [
+        {
+            "name": "Search",
+            "endpoint": "search/",
+            "method": "GET",
+            "queryParams": {
+                "q": "Search query string"
+            },
+            "description": "Search for videos, channels, and playlists",
+            "response": {
+                "contents": [
+                    {
+                        "type": "video",
+                        "video": {
+                            "title": "Video title",
+                            "videoId": "Unique video ID",
+                            "author": {
+                                "title": "Channel name",
+                                "badges": [
+                                    {
+                                        "type": "VERIFIED_CHANNEL"
+                                    }
+                                ],
+                                "avatar": [
+                                    {
+                                        "url": "Avatar image URL"
+                                    }
+                                ]
+                            },
+                            "stats": {
+                                "views": "View count"
+                            }
+                        }
+                    }
+                ]
+            },
+            "usedIn": [
+                "SearchResult.js",
+                "contextApi.js"
+            ]
+        },
+        {
+            "name": "Video Details",
+            "endpoint": "video/details/",
+            "method": "GET",
+            "queryParams": {
+                "id": "Video ID"
+            },
+            "description": "Get detailed information about a specific video",
+            "response": {
+                "title": "Video title",
+                "author": {
+                    "title": "Channel name",
+                    "badges": [
+                        {
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "avatar": [
+                        {
+                            "url": "Avatar image URL"
+                        }
+                    ],
+                    "stats": {
+                        "subscribersText": "Subscriber count text"
+                    }
+                },
+                "stats": {
+                    "likes": "Number of likes",
+                    "views": "Number of views"
+                }
+            },
+            "usedIn": [
+                "VideoDetails.js"
+            ]
+        },
+        {
+            "name": "Related Content",
+            "endpoint": "video/related-contents/",
+            "method": "GET",
+            "queryParams": {
+                "id": "Video ID"
+            },
+            "description": "Get related videos for a specific video",
+            "response": {
+                "contents": [
+                    {
+                        "type": "video",
+                        "video": {
+                            "title": "Related video title",
+                            "videoId": "Related video ID",
+                            "thumbnails": [
+                                {
+                                    "url": "Thumbnail URL"
+                                }
+                            ],
+                            "author": {
+                                "title": "Channel name",
+                                "badges": []
+                            },
+                            "stats": {
+                                "views": "View count"
+                            },
+                            "publishedTimeText": "Time since publication"
+                        }
+                    }
+                ]
+            },
+            "usedIn": [
+                "VideoDetails.js"
+            ]
+        }
+    ],
+    "notes": {
+        "authentication": "All API calls require RapidAPI key stored in the environment variable REACT_APP_YOUTUBE_API_KEY",
+        "rateLimit": "Check RapidAPI dashboard for current usage limits",
+        "errorHandling": "The current implementation doesn't have explicit error handling for API calls"
+    }
+}
