@@ -1,0 +1,11 @@
+platform :ios, '14.0'
+
+# Specify the project path explicitly
+project 'OfflineTube.xcodeproj'
+
+target 'OfflineTube' do
+  use_frameworks!
+
+  # Pods for OfflineTube
+  pod 'GCDWebServer', '~> 3.5'
+end

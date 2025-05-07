@@ -1,19 +1,15 @@
-//
-//  AppDelegate.swift
-//  OfflineTube
-//
-//  Created by Stefan Dimitrov on 5/5/25.
-//
-
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Initialize web content manager
+        WebContentManager.shared.copyWebContentToBundleIfNeeded()
+        
+        // Set background fetch interval
+        application.setMinimumBackgroundFetchInterval(UIApplication.backgroundFetchIntervalMinimum)
+        
         return true
     }
 
@@ -27,10 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+    
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        // Background fetch for processing any new content
+        // You can implement downloading/syncing of new videos here
+        completionHandler(.noData)
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Stop the web server when app terminates
+        WebContentManager.shared.stopWebServer()
+    }
 }
-
