@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28AE1CC8F5B99AAFD3065374 /* Pods_OfflineTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72B9B1C1994B06293A7E685 /* Pods_OfflineTube.framework */; };
+		7DFF75B9DA2534E1B248A36D /* Pods_OfflineTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7823F75C2EA15BF3EC74B631 /* Pods_OfflineTube.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		94C3829F4F84D5BD050A8EDB /* Pods-OfflineTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineTube.release.xcconfig"; path = "Target Support Files/Pods-OfflineTube/Pods-OfflineTube.release.xcconfig"; sourceTree = "<group>"; };
-		E0C68AC46183E138DA3E90FE /* Pods-OfflineTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineTube.debug.xcconfig"; path = "Target Support Files/Pods-OfflineTube/Pods-OfflineTube.debug.xcconfig"; sourceTree = "<group>"; };
-		E72B9B1C1994B06293A7E685 /* Pods_OfflineTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfflineTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B058A5CCDED5D6DD918DCB /* Pods-OfflineTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineTube.release.xcconfig"; path = "Target Support Files/Pods-OfflineTube/Pods-OfflineTube.release.xcconfig"; sourceTree = "<group>"; };
+		33FF57A4A06BBB29E5B1003E /* Pods-OfflineTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineTube.debug.xcconfig"; path = "Target Support Files/Pods-OfflineTube/Pods-OfflineTube.debug.xcconfig"; sourceTree = "<group>"; };
+		7823F75C2EA15BF3EC74B631 /* Pods_OfflineTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfflineTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9D3652DC9BEF3001BF62B /* OfflineTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflineTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9D37B2DC9BEF4001BF62B /* OfflineTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfflineTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9D3852DC9BEF4001BF62B /* OfflineTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfflineTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,15 +57,11 @@
 		};
 		F8D9D37E2DC9BEF4001BF62B /* OfflineTubeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = OfflineTubeTests;
 			sourceTree = "<group>";
 		};
 		F8D9D3882DC9BEF4001BF62B /* OfflineTubeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = OfflineTubeUITests;
 			sourceTree = "<group>";
 		};
@@ -76,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AE1CC8F5B99AAFD3065374 /* Pods_OfflineTube.framework in Frameworks */,
+				7DFF75B9DA2534E1B248A36D /* Pods_OfflineTube.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,22 +93,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		148CE3317233934F4575F809 /* Frameworks */ = {
+		BEFDCC744A0AB8F96577D52C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E72B9B1C1994B06293A7E685 /* Pods_OfflineTube.framework */,
+				33FF57A4A06BBB29E5B1003E /* Pods-OfflineTube.debug.xcconfig */,
+				22B058A5CCDED5D6DD918DCB /* Pods-OfflineTube.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		96F82A2FBF1F0ED7F0E36D6B /* Pods */ = {
+		D8262B39B070D3A3CBFE8A36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E0C68AC46183E138DA3E90FE /* Pods-OfflineTube.debug.xcconfig */,
-				94C3829F4F84D5BD050A8EDB /* Pods-OfflineTube.release.xcconfig */,
+				7823F75C2EA15BF3EC74B631 /* Pods_OfflineTube.framework */,
 			);
-			name = Pods;
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F8D9D35C2DC9BEF3001BF62B = {
@@ -122,8 +117,8 @@
 				F8D9D37E2DC9BEF4001BF62B /* OfflineTubeTests */,
 				F8D9D3882DC9BEF4001BF62B /* OfflineTubeUITests */,
 				F8D9D3662DC9BEF3001BF62B /* Products */,
-				96F82A2FBF1F0ED7F0E36D6B /* Pods */,
-				148CE3317233934F4575F809 /* Frameworks */,
+				BEFDCC744A0AB8F96577D52C /* Pods */,
+				D8262B39B070D3A3CBFE8A36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,11 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8D9D38E2DC9BEF4001BF62B /* Build configuration list for PBXNativeTarget "OfflineTube" */;
 			buildPhases = (
-				90314D9C9264F60BB4CFFE08 /* [CP] Check Pods Manifest.lock */,
+				31DF3E06EC860D710340550B /* [CP] Check Pods Manifest.lock */,
 				F8D9D3612DC9BEF3001BF62B /* Sources */,
 				F8D9D3622DC9BEF3001BF62B /* Frameworks */,
 				F8D9D3632DC9BEF3001BF62B /* Resources */,
-				359178740D44D922C4E0DC9C /* [CP] Embed Pods Frameworks */,
+				A00B27C10D4FA1E113790701 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,24 +268,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		359178740D44D922C4E0DC9C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OfflineTube/Pods-OfflineTube-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OfflineTube/Pods-OfflineTube-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OfflineTube/Pods-OfflineTube-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90314D9C9264F60BB4CFFE08 /* [CP] Check Pods Manifest.lock */ = {
+		31DF3E06EC860D710340550B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,6 +288,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00B27C10D4FA1E113790701 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OfflineTube/Pods-OfflineTube-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OfflineTube/Pods-OfflineTube-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OfflineTube/Pods-OfflineTube-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -354,7 +353,7 @@
 /* Begin XCBuildConfiguration section */
 		F8D9D38F2DC9BEF4001BF62B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0C68AC46183E138DA3E90FE /* Pods-OfflineTube.debug.xcconfig */;
+			baseConfigurationReference = 33FF57A4A06BBB29E5B1003E /* Pods-OfflineTube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -383,7 +382,7 @@
 		};
 		F8D9D3902DC9BEF4001BF62B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94C3829F4F84D5BD050A8EDB /* Pods-OfflineTube.release.xcconfig */;
+			baseConfigurationReference = 22B058A5CCDED5D6DD918DCB /* Pods-OfflineTube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,7 +447,7 @@
 				DEVELOPMENT_TEAM = R9227CJSAP;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -512,7 +511,7 @@
 				DEVELOPMENT_TEAM = R9227CJSAP;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
